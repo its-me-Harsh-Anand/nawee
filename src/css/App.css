@@ -1,0 +1,13 @@
+.App{
+    /* display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column; */
+    width: 80%;
+    margin: auto;
+}
+@media  screen and (max-width : 767px) {
+    .App{
+        width: 100%;
+    }
+}
