@@ -1,0 +1,68 @@
+.footer{
+    background-color: var(--main-bg-color);
+    color: white;
+    padding: 20px auto;
+    display: flex;
+    justify-content: space-between;
+    min-height: 250px;
+    align-items: center;
+}
+.full-bleed{
+    box-shadow: 0 0 0 100vmax var(--main-bg-color);
+    clip-path: inset(0 -100vmax);
+}
+.copyright{
+    text-align: center;
+    padding: 20px;
+    color: white;
+    background-color: #333333;
+}
+.full-bleed-cp{
+    box-shadow: 0 0 0 100vmax #333333;
+    clip-path: inset(0 -100vmax);
+}
+.ft-logo img{
+    width: 80px;
+}
+.socials{
+    display: flex;
+    flex-direction: column;
+}
+.social a{
+    padding: 5px;
+}
+.links{
+    display: flex;
+    flex-direction: column;
+}
+.link{
+    display: flex;
+    padding: 15px 0px;
+}
+.link h3{
+    padding-right: 20px;
+    min-width: 170px;
+}
+.link ul li{
+    list-style: none;
+    padding: 0px 10px;
+}
+.link ul li:not(:last-child){
+    border-right: 1px solid white;
+}
+.link , .link ul{
+    display: flex;
+    flex-direction: row;
+}
+.links ul li a{
+    text-decoration: none;
+    color: white;
+}
+@media screen and (max-width : 767px){
+    .footer{
+        flex-direction: column;
+    }
+    .socials{
+        flex-direction: row;
+    }
+}
