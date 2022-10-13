@@ -1,10 +1,12 @@
 import React, { useState } from 'react'
 import '../css/ParcelOptions.css'
+import Form from './Form';
 
 function ParcelOptions() {
     const [option, setOption]= useState('both')
     
   return (
+    <div>
     <div className="options-main">
       <div className="options">
         <button data-type="single" onClick={(e) => setOption('single')}>
@@ -31,8 +33,8 @@ function ParcelOptions() {
           <span>3</span>
         </button>
       </div>
-
-      {option === "both" && <div className="both-form"></div>}
+    </div>
+    {option === 'both' && <Form />}
     </div>
   );
 }

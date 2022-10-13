@@ -12,3 +12,7 @@
   --main-bg-color: #FA8832;
   --main-text-color: #FA8832;
 }
+input[type="radio" i]{
+  border: 2px solid var(--main-bg-color);
+  border-radius: 3px;
+}
