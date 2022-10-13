@@ -63,10 +63,43 @@ function Form() {
         </div>
       </div>
 
-      
+
       <div className="parcel">
+        <div className="parcel-desc">
         <h3>Parcel Information</h3>
-      </div>
+            <select name="weight" className='select'>
+                <option value="none">Weight</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <select name="size" className='select'>
+                <option value="none">Weight</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+            <select name="type" className='select'>
+                <option value="none">Weight</option>
+                <option value="2">2</option>
+                <option value="3">3</option>
+                <option value="4">4</option>
+            </select>
+
+            <input type="text" className="description-parcel" placeholder='  Detailed Description of Parcel'/>
+            <div className="check">
+                <div className="opt">
+                    <input type="radio" name="t1" id="drop"/>
+                    <label htmlFor="t1" className='drop-label'>Insure you Parcel {"(subject to additional charges)"}</label>
+                </div>
+            </div>
+        </div>
+
+        <div className="proceed">
+            <button>BACK</button>
+            <button>PROCEED TO SUMMARY</button>
+        </div>
+        </div>
     </form>
   );
 }

@@ -1,9 +1,11 @@
+
+/* Receiver Information */
 form{
     display: flex;
     justify-content: space-between;
     padding: 30px;
 }
- h3, h5{
+form h3, form h5{
     margin: 20px 0px;
 }
 .reciever{
@@ -51,8 +53,50 @@ form{
 .city:not(:first-child){
     padding-left: 5px;
 }
+
+
+/* Parcel Information */
+.parcel{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+}
+.proceed{
+    display: flex;
+    width: 300px;
+    justify-content: space-between;
+}
+.proceed button{
+    padding: 10px;
+    min-width: fit-content;
+    text-align: center;
+    border-radius: 5px;
+    border: none;
+}
+.proceed button:first-child{
+    background-color: white;
+    color: var(--main-text-color);
+    box-shadow: 2px 2px whitesmoke;
+}
+.proceed button:last-child{
+    background-color: var(--main-bg-color);
+    color: white;
+}
+.description-parcel{
+    height: 100px;
+    width: 300px;
+    border: 1px solid var(--main-bg-color);
+    border-radius: 5px;
+    display: block;
+    margin-bottom: 10px;
+}
+.drop-label{
+    font-size: 0.5em;
+}
 @media screen and (max-width: 767px){
     form{
         flex-direction: column;
+        align-items: center;
     }
 }

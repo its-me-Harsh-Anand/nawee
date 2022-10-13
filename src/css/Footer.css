@@ -65,4 +65,7 @@
     .socials{
         flex-direction: row;
     }
+    .link{
+        flex-direction: column;
+    }
 }
